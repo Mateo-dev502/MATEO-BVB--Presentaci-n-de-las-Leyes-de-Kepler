@@ -347,3 +347,64 @@ body {
     text-align: center;
   }
 }
+/* ===== Portada con Grid ===== */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* izquierda 1 parte, derecha 2 partes */
+  align-items: center;
+  gap: 2rem;
+  height: calc(100vh - 140px);
+  padding: 2rem 4rem;
+}
+
+/* Columna izquierda: logo */
+.hero-left {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-big {
+  max-width: 250px; /* tamaño controlado */
+  height: auto;
+}
+
+/* Columna derecha: textos */
+.hero-right {
+  text-align: left;
+}
+
+.hero-right .hero-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-right .hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.hero-right .student-info {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-right .hero-image img {
+  max-width: 240px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.4);
+}
+
+/* Responsive: en pantallas chicas, se apila */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr; /* una sola columna */
+    text-align: center;
+  }
+  .hero-right {
+    text-align: center;
+  }
+}
