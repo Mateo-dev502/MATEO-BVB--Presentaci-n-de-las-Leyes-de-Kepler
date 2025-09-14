@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Leyes de Kepler - Presentación Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <div class="nav-content">
+                <h1 class="nav-title">Las Leyes de Kepler</h1>
+                <div class="nav-controls">
+                    <button id="prevBtn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <span id="slideCounter" class="slide-counter">1 / 10</span>
+                    <button id="nextBtn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- Slides Container -->
+        <main class="slides-container" id="slidesContainer">
+
+            <!-- Slide 1: Portada -->
+            <section class="slide active" data-slide="1">
+                <div class="slide-content">
+                    <div class="hero-section">
+
+                        <!-- Logo de la Universidad -->
+                        <div class="university-logo">
+                            <img src="321-3210847_logo-de-umg-png.png" alt="Logo UMG" class="logo-img">
+                        </div>
+
+                        <!-- Título de la presentación -->
+                        <h1 class="hero-title">Las Leyes de Kepler</h1>
+                        <h2 class="hero-subtitle">El Estudio del Movimiento Planetario</h2>
+
+                        <!-- Información personal -->
+                        <div class="student-info">
+                            <p><strong>Universidad Mariano Gálvez</strong> – Ciudad de Guatemala</p>
+                            <p><strong>Curso:</strong> Física 1</p>
+                            <p><strong>Alumno:</strong> Mateo B Vásquez B</p>
+                            <p><strong>Carné:</strong> 7065-24-5549</p>
+                        </div>
+
+                        <!-- Imagen Kepler -->
+                        <div class="hero-image">
+                            <img src="https://cdn.abacus.ai/images/fd3ed351-55bd-4fd6-b2fa-853daf045497.png" 
+                                 alt="Johannes Kepler" class="responsive-img">
+                        </div>
+
+                        <p class="hero-description">Una revolución científica que cambió nuestra comprensión del cosmos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slides de contenido reducidos por espacio -->
+            <section class="slide" data-slide="2">
+                <div class="slide-content"><h2 class="slide-title">Contexto Histórico</h2></div>
+            </section>
+
+            <section class="slide" data-slide="10">
+                <div class="slide-content"><h2 class="slide-title">Conclusión</h2></div>
+            </section>
+        </main>
+        <div class="slide-dots" id="slideDots">
+            <button class="dot active" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+            <button class="dot" data-slide="10"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
