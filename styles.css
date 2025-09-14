@@ -284,3 +284,66 @@ body {
     max-width: 90px;   /* achicar logo */
   }
 }
+/* ===== Portada en dos columnas ===== */
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; /* espacio entre columnas */
+  height: calc(100vh - 140px);
+  padding: 2rem;
+}
+
+/* Columna izquierda: logo */
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-big {
+  max-width: 220px;
+  height: auto;
+}
+
+/* Columna derecha: títulos y datos */
+.hero-right {
+  flex: 2;
+  text-align: left;
+}
+
+.hero-right .hero-title {
+  font-size: 2.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-right .hero-subtitle {
+  font-size: 1.4rem;
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-right .student-info {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-right .hero-image img {
+  max-width: 280px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.4);
+}
+
+/* Responsive: en pantallas pequeñas, se apila */
+@media (max-width: 900px) {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-right {
+    text-align: center;
+  }
+}
