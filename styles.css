@@ -166,3 +166,25 @@ body {
 .dot.active {
   background-color: #38bdf8;
 }
+/* Centrar verticalmente la portada */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px); /* alto dinámico, resta la barra de navegación */
+  text-align: center;
+}
+
+/* Reducir tamaño de la imagen Kepler */
+.hero-image img {
+  max-width: 250px;   /* antes 350px, ahora más chico */
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Asegurar que el logo de la UMG no se corte */
+.university-logo {
+  margin-bottom: 0.5rem;
+}
