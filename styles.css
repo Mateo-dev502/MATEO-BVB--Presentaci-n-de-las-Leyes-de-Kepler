@@ -3,7 +3,7 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #1e293b; /* azul gris más claro que el actual */
+  background: linear-gradient(135deg, #1e40af, #0ea5e9); /* azul fuerte a celeste */
   color: #f1f5f9;
 }
 
