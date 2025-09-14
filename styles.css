@@ -262,3 +262,25 @@ body {
     max-width: 90px;  /* achicar logo pero visible */
   }
 }
+/* ==== Ajuste de visibilidad del Logo (final) ==== */
+.university-logo {
+  margin-top: 60px;   /* deja espacio para la nav-bar */
+  margin-bottom: 1rem;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 120px;   /* tamaño controlado */
+  height: auto;
+}
+
+/* Responsive: en pantallas bajas (720p o menos) */
+@media (max-height: 720px) {
+  .university-logo {
+    margin-top: 40px;  /* menos margen para caber */
+  }
+  .logo-img {
+    max-width: 90px;   /* achicar logo */
+  }
+}
