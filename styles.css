@@ -1,3 +1,168 @@
-.university-logo {text-align:center;margin-bottom:1rem;}
-.logo-img {max-width:160px;height:auto;margin:0 auto;}
-.student-info {text-align:center;font-size:1.1rem;line-height:1.6;color:#cbd5e1;}
+/* ===== Estilos Globales ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+/* ===== Navegación ===== */
+.nav-bar {
+  background: #1e293b;
+  padding: 0.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  background: #334155;
+  color: #f1f5f9;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: #475569;
+}
+
+.slide-counter {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* ===== Progress Bar ===== */
+.progress-bar {
+  height: 5px;
+  background: #475569;
+  width: 100%;
+}
+
+.progress-fill {
+  height: 5px;
+  background: #38bdf8;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* ===== Slides ===== */
+.slides-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* ===== Hero (Portada) ===== */
+.hero-title {
+  font-size: 2.4rem;
+  margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #38bdf8;
+}
+
+.hero-image img {
+  max-width: 350px;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #cbd5e1;
+}
+
+/* ===== Datos personales ===== */
+.university-logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo-img {
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.student-info {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* ===== Títulos Slides ===== */
+.slide-title {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.law-diagram {
+  max-width: 500px;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* ===== Dots ===== */
+.slide-dots {
+  text-align: center;
+  margin: 1rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #475569;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #38bdf8;
+}
