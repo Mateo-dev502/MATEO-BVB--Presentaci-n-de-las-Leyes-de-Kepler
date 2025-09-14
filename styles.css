@@ -408,3 +408,18 @@ body {
     text-align: center;
   }
 }
+/* ===== Tarjeta de fondo para resaltar ===== */
+.hero-card {
+  background: rgba(255, 255, 255, 0.1); /* blanco transparente */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* sombra suave */
+  backdrop-filter: blur(6px); /* efecto vidrio esmerilado */
+}
+
+/* Ajuste del texto dentro de la card */
+.hero-card h1, 
+.hero-card h2, 
+.hero-card p {
+  color: #ffffff; /* siempre legible */
+}
